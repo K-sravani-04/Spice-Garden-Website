@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Our Menu</title>
+    <link rel="stylesheet" href="../CSS/menu.css">
+</head>
+<body>
+
+<header class="header">
+    <a  href="home" class="logo">SPICE GARDEN</a>
+        <nav class="link">
+                <a href="home.html">Home</a></li>
+                <a href="about.html">About</a></li>
+                <a href=" our services.html">Our Services</a></li>
+                <a href="menu.html">Menu</a></li>
+                <a href="contact.html">Contact</a></li>
+        </nav> 
+   </header>
+<main class="content">
+<div class="menu-title">
+    <h1>Our Special Menu</h1>
+    <p>Taste The Authentic Flavours Of Spice Garden</p>
+</div>
+
+<div class="menu-container">
+    <div class="menu-card">
+        <img src="../images/chicken-biryani.jpg">
+        <h3>Chicken Biryani</h3>
+        <p>Rs. 250</p>
+        <button type="button">Order Now</button>
+    </div>
+    <div class="menu-card">
+        <img src="../images/paneer-curry.jpg">
+        <h3>Paneer Curry</h3>
+        <p>Rs. 180</p>
+        <button type="button">Order Now</button>
+    </div>
+    <div class="menu-card">
+        <img src="../images/veg-meals.jpg">
+        <h3>Veg Meals</h3>
+        <p>Rs. 150</p>
+        <button type="button">Order Now</button>
+    </div>
+    <div class="menu-card">
+        <img src="../images/chicken-curry.jpg">
+        <h3>chicken-curry</h3>
+        <p>Rs. 200</p>
+       <button type="button">Order Now</button>
+</div>
+<div class="menu-card">
+        <img src="../images/Fish-Curry.jpg">
+        <h3>Fish-Curry</h3>
+        <p>Rs. 250</p>
+        <button type="button">Order Now</button>
+</div>
+<div class="menu-card">
+        <img src="../images/chicken-mandi.jpg">
+        <h3>chicken-mandi</h3>
+        <p>Rs. 800</p>
+        <button type="button">Order Now</button>
+        </div>
+        </div>
+</main>
+
+<section class="order-form">
+    <h2>Place Your Order</h2>
+
+    <form id="order-form">
+        <input
+            type="text"
+            id="food-name"
+            placeholder="Selected Food"
+            required
+            readonly
+        >
+        <input
+            type="text"
+            id="customer-name"
+            placeholder="Your Name"
+            required
+        >
+        <input
+            type="number"
+            id="quantity"
+            placeholder="Quantity"
+            min="1"
+            step="1"
+            required
+        >
+        <button type="submit">Confirm Order</button>
+        <p id="order-status" aria-live="polite"></p>
+    </form>
+</section>
+<script src="../Javascript/menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+body{
+    background-color:black;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:30px;
+    background-color:white;
+    padding: 15px 30px;
+}
+.link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.logo {
+    font-size: 25px;
+}
+.link a{
+      color:black;
+      text-decoration: none;
+      padding: 5px 12px;
+}
+.more-text{
+    background-color: #d4a017;
+    color: #111;
+    border: none;
+    padding:10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.about-img{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 15px;
+    width: 450px;
+}
+
+.about-img img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover; 
+    border-radius: 12px;
+    border: 2px solid gold;
+    transition: 0.3s;
+}
+.about-img img:hover{
+    transform: scale(1.05);
+}
+
+
+.about-hero{
+    text-align: center;
+    padding:10px 10px;
+    background: #111;
+    color: gold;
+}
+.about-hero p{ color: #ccc; margin-top: 10px;
+ }
+
+ .about-content h2{
+    margin-top:5px;
+    padding:5px 5px;
+ }
+.about-content{
+    display: flex;
+    gap: 40px;
+    padding: 60px 10%;
+    align-items: center;
+    background: #1a1a1a;
+    color: white;
+    flex-wrap: wrap;
+}
+.about-content img{
+    width: 400px;
+    border-radius: 15px;
+    border: 2px solid gold;
+}
+.about-values{
+    padding: 50px 20px;
+    text-align: center;
+    background: #111;
+    color: white;
+}
+.values-row{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+.extra-story {
+    line-height: 1.8;
+    margin-top: 15px;
+}
+.more-text {
+    background-color: #d4a017;
+    color: #111;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.more-text:hover {
+    background-color: gold;
+}
+.about-content,
+.about-values {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.about-content.visible,
+.about-values.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.value-box{
+    background: #1e1e1e;
+    padding: 25px;
+    border-radius: 12px;
+    width: 250px;
+    border-bottom: 3px solid gold;
+}
+.footer {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
